@@ -1,0 +1,13 @@
+.imageContainer {
+    margin: 0 10%;
+}
+
+.customImg {
+    border-radius: 10px;
+}
+
+.customCard {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}

@@ -1,0 +1,16 @@
+.coverContainer {
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(44, 8, 20, 0.8)), url("https://www.smviagens.com.br/wp-content/uploads/2018/06/Viagem.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.coverText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
