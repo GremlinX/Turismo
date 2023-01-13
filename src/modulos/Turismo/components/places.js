@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Dropdown, DropdownButton, Row, Card } from "react-bootstrap";
 import styles from "./places.module.css";
-// import placeArray from "./locais"
 
 function Places({ locaisFiltrados }) {
 
@@ -11,11 +10,11 @@ function Places({ locaisFiltrados }) {
                 <Container>
                     <Row>
                         {locaisFiltrados.map((data, index) => (
-                            <Col key={index} md="4">
+                            <Col className="d-flex align-items-stretch" key={index} md="4">
                                 {/* Ajustar tamanho */}
-                                <Card style={{ height: '325px', width: '100%', display: 'block', marginBottom: '1rem'}}>
-                                    <Card.Img variant="top" src={data.url} alt={data.name}/>
-                                    <Card.Body>
+                                <Card style={{ width: '100%' }}>
+                                    <Card.Img style={{ width: '100%', display: 'block', marginBottom: '1rem' }} variant="top" src={data.url} alt={data.name}/>
+                                    <Card.Body style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
                                         <Card.Title>{data.name}</Card.Title>
                                         <DropdownButton variant="success" id="dropdown-item-button" title="Info" size='sm'>
                                             <Dropdown.ItemText>{data.description}</Dropdown.ItemText>
